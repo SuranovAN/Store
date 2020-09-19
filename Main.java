@@ -1,32 +1,45 @@
-import ConsoleUI.ConsoleCommand;
-import ConsoleUI.Switch;
-import ConsoleUI.Menu;
+import ConsoleUI.Commands.*;
 import Product.ProductsDB;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
         ProductsDB productsDB = ProductsDB.getInstance();
         productsDB.initialize("src\\Source\\assortment");
-        Menu menu = new Menu();
-        ConsoleCommand showAllProducts = menu::showAll;
-        ConsoleCommand doSome1 = menu::some1;
-
-        Switch mySwitch = new Switch();
-        mySwitch.register("1", showAllProducts);
-        mySwitch.register("2", doSome1);
-        mySwitch.printMap();
-        String str = scanner.nextLine();
-        if (1 == Integer.parseInt(str)){
-            mySwitch.execute(str);
+        ConsoleCommand showMenuCommand = new ShowMenuCommand();
+        while (true) {
+            showMenuCommand.execute();
+            int userChoice = Integer.parseInt(scanner.nextLine());
+            switch (userChoice) {
+                case 1:
+                    new ShowcaseCommand(productsDB).execute();
+                    break;
+                case 2:
+                    new ShowFiltersCommand().execute();
+                    new FilterCommand().execute();
+                    break;
+                case 3:
+                    new addToBucketCommand().execute();
+                    break;
+                case 4:
+                    new ShowBucketCommand().execute();
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                default:
+                    System.out.println("Такого пункта нету");
+            }
+            if (userChoice == 7){
+                break;
+            }
         }
-//        FilterByManufacturer filterByManufacturer = new FilterByManufacturer();
-//        FilterByType filterByType = new FilterByType();
-//        filterByType.filter(MILK);
-//        filterByManufacturer.filter("останкино");
-
     }
 }

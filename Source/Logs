@@ -1,0 +1,10 @@
+name='Колбаса сырокопчёная', manufactures='останкино', price=100, id=1, type=SAUSAGE в колличестве 15
+name='Колбаса сырокопчёная', manufactures='останкино', price=100, id=1, type=SAUSAGE в колличестве 1243
+name='Молоко лианозовское', manufactures='Лианозовский молочный комбинат', price=75, id=5, type=MILK в колличестве 1243
+name='Колбаса сырокопчёная', manufactures='останкино', price=100, id=1, type=SAUSAGE в колличестве 31
+name='Молоко лианозовское', manufactures='Лианозовский молочный комбинат', price=75, id=5, type=MILK в колличестве 31
+name='Бёрн', manufactures='Кокакола эйчибиси', price=120, id=2, type=ENERGY_DRINK в колличестве 31
+name='Колбаса сырокопчёная', manufactures='останкино', price=100, id=1, type=SAUSAGE в колличестве 1
+name='Молоко лианозовское', manufactures='Лианозовский молочный комбинат', price=75, id=5, type=MILK в колличестве 1
+name='Бёрн', manufactures='Кокакола эйчибиси', price=120, id=2, type=ENERGY_DRINK в колличестве 1
+name='Драйв', manufactures='КокаКола', price=84, id=4, type=ENERGY_DRINK в колличестве 1

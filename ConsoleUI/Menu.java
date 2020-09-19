@@ -1,34 +1,41 @@
 package ConsoleUI;
 
-import Product.ProductsDB;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
-    public void showAll(){
-        ProductsDB db = ProductsDB.getInstance();
-        Showcase showcase = new Showcase(db);
-        showcase.printV(3,2);
+    private static Menu menu;
+    private final List<String> menuList = new ArrayList<>();
+    private final List<String> filterList = new ArrayList<>();
+
+    public static Menu getInstance() {
+        if (menu == null) {
+            menu = new Menu();
+        }
+        return menu;
     }
 
-    public void choiceFilter(){
-        System.out.println("some1");
+    private Menu() {
+        menuList.add("Вывести список доступных продуктов");
+        menuList.add("Вывести список фильтров");
+        menuList.add("добавить продукты в корзину");
+        menuList.add("Посмотреть корзину");
+        menuList.add("сформировать заказ");
+        menuList.add("повторить последний заказ");
+        menuList.add("Выход");
+
+        filterList.add("Фильтрация по Производителю");
+        filterList.add("Фильтрация по Наименованию продукта");
+        filterList.add("Фильтрация по цене продукта");
+        filterList.add("Фильтрация по типу продукта");
+        filterList.add("Вернуться к списку меню");
     }
 
-    public void checkBucket(){
-        System.out.println("some2");
+    public List<String> getMenuList() {
+        return menuList;
     }
 
-    public void trackZakaz(){
-
-    }
-
-    public void repatZakaz(){
-
-    }
-
-    public void refundZakaz(){
-
-    }
-
-    public void some1() {
+    public List<String> getFilterList() {
+        return filterList;
     }
 }

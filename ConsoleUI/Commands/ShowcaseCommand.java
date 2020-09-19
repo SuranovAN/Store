@@ -1,14 +1,14 @@
-package ConsoleUI;
+package ConsoleUI.Commands;
 
 import Product.ProductEntity;
 import Product.ProductsDB;
 
 import java.util.List;
 
-public class Showcase {
+public class ShowcaseCommand implements ConsoleCommand {
     List<ProductEntity> productList;
 
-    public Showcase(ProductsDB db) {
+    public ShowcaseCommand(ProductsDB db) {
         productList = db.getProductsList();
     }
 
@@ -25,5 +25,10 @@ public class Showcase {
             System.out.println();
         }
         System.out.println();
+    }
+
+    @Override
+    public void execute() {
+        printV(3,2);
     }
 }
