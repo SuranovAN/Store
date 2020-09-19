@@ -5,7 +5,7 @@ public class ProductEntity {
     private int price, id;
     private ProductTypes type;
 
-    public ProductEntity(int id,String name, String manufactures, ProductTypes type, int price) {
+    public ProductEntity(int id, String name, String manufactures, ProductTypes type, int price) {
         this.id = id;
         this.name = name;
         this.manufactures = manufactures;

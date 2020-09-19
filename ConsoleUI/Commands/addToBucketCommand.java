@@ -1,6 +1,6 @@
 package ConsoleUI.Commands;
 
-import Logs.ConsoleLogger;
+import Logs.BucketLogger;
 import Product.ProductEntity;
 import Product.ProductsDB;
 import UserBucket.UserBucket;
@@ -14,18 +14,19 @@ public class addToBucketCommand implements ConsoleCommand {
     @Override
     public void execute() {
         Scanner scanner = new Scanner(System.in);
+        BucketLogger bucketLogger = new BucketLogger();
         while (true) {
             System.out.println("Введите через пробел id товара и количество или пустую строку для возврата в меню");
             String str = scanner.nextLine();
-            if ("".equals(str)){
+            if ("".equals(str)) {
                 break;
             }
             String[] arr = str.split(" ");
             ProductEntity productEntity = productsDB.getProductsList()
                     .stream()
-                    .filter((p -> p.getId() == Integer.parseInt(arr[0]))).findFirst().get();
+                    .filter((p -> p.getId() == Integer.parseInt(arr[0]))).findAny().get();
             userBucket.getBucket().add(productEntity);
-            new ConsoleLogger().log(arr[1] + "\n");
+            bucketLogger.log(productEntity.toString() + " X " + arr[1] + "\n");
             userBucket.getSummary()
                     .append(productEntity.getName())
                     .append(" x ")

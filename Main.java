@@ -1,4 +1,5 @@
 import ConsoleUI.Commands.*;
+import Logs.BucketLogger;
 import Product.ProductsDB;
 
 import java.io.IOException;
@@ -29,15 +30,18 @@ public class Main {
                     new ShowBucketCommand().execute();
                     break;
                 case 5:
+                    //new FormOrderCommand();
                     break;
                 case 6:
+                    new RepeatLastOrderCommand().execute();
                     break;
                 case 7:
                     break;
                 default:
                     System.out.println("Такого пункта нету");
             }
-            if (userChoice == 7){
+            if (userChoice == 7) {
+                new BucketLogger().clearLog();
                 break;
             }
         }

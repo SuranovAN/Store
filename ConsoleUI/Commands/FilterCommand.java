@@ -39,7 +39,7 @@ public class FilterCommand implements ConsoleCommand {
                 case 5:
                     break;
             }
-            if (i == 5){
+            if (i == 5) {
                 break;
             }
         }

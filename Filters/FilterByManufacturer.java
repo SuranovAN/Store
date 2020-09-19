@@ -1,6 +1,6 @@
 package Filters;
 
-public class FilterByManufacturer extends Filter{
+public class FilterByManufacturer extends Filter {
     private String Type;
 
     @Override

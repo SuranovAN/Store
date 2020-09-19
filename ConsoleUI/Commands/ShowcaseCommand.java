@@ -29,6 +29,6 @@ public class ShowcaseCommand implements ConsoleCommand {
 
     @Override
     public void execute() {
-        printV(3,2);
+        printV(3, 2);
     }
 }

@@ -10,8 +10,8 @@ public class UserBucket {
     private StringBuilder summary = new StringBuilder();
     private List<ProductEntity> bucket = new ArrayList<>();
 
-    public static UserBucket getInstance(){
-        if (userBucket == null){
+    public static UserBucket getInstance() {
+        if (userBucket == null) {
             userBucket = new UserBucket();
         }
         return userBucket;
@@ -21,7 +21,7 @@ public class UserBucket {
         return bucket;
     }
 
-    public void clearBucket(){
+    public void clearBucket() {
         bucket.clear();
     }
 

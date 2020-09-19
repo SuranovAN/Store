@@ -14,8 +14,9 @@ public class ProductsDB {
     public List<ProductEntity> getProductsList() {
         return productsList;
     }
-    public static ProductsDB getInstance(){
-        if (productsDB == null){
+
+    public static ProductsDB getInstance() {
+        if (productsDB == null) {
             productsDB = new ProductsDB();
         }
         return productsDB;

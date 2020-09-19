@@ -1,0 +1,3 @@
+name='Колбаса сырокопчёная', manufactures='останкино', price=100, id=1, type=SAUSAGE X 12
+name='Бёрн', manufactures='Кокакола эйчибиси', price=120, id=2, type=ENERGY_DRINK X 45
+name='Колбаса докторская', manufactures='останкино', price=80, id=3, type=SAUSAGE X 1
