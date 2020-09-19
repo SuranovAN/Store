@@ -1,13 +1,10 @@
 package Logs;
 
-import UserBucket.UserBucket;
-
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class BucketLogger implements Logger {
-    UserBucket userBucket = UserBucket.getInstance();
 
     @Override
     public void log(String msg) {
