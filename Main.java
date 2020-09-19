@@ -41,7 +41,7 @@ public class Main {
                     System.out.println("Такого пункта нету");
             }
             if (userChoice == 7) {
-                new BucketLogger().clearLog();
+                new BucketLogger().clean();
                 break;
             }
         }

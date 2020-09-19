@@ -1,6 +1,7 @@
 package ConsoleUI.Commands;
 
 import Logs.BucketLogger;
+import Logs.Logger;
 import Product.ProductEntity;
 import Product.ProductsDB;
 import UserBucket.UserBucket;
@@ -14,7 +15,7 @@ public class addToBucketCommand implements ConsoleCommand {
     @Override
     public void execute() {
         Scanner scanner = new Scanner(System.in);
-        BucketLogger bucketLogger = new BucketLogger();
+        Logger bucketLogger = new BucketLogger();
         while (true) {
             System.out.println("Введите через пробел id товара и количество или пустую строку для возврата в меню");
             String str = scanner.nextLine();
