@@ -1,9 +1,9 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import UserBucket.UserBucket;
+import usersbucket.UsersBucket;
 
 public abstract class FormOrderCommand implements ConsoleCommand {
-    UserBucket userBucket = UserBucket.getInstance();
+    UsersBucket userBucket = UsersBucket.getInstance();
 
     @Override
     public void execute() {

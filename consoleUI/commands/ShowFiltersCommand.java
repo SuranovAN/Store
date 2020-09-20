@@ -1,6 +1,6 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import ConsoleUI.Menu;
+import consoleUI.Menu;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

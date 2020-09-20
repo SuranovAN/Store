@@ -1,6 +1,6 @@
-import ConsoleUI.Commands.*;
-import Logs.BucketLogger;
-import Product.ProductsDB;
+import consoleUI.commands.*;
+import logs.BucketLogger;
+import product.ProductsDB;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -24,7 +24,7 @@ public class Main {
                     new FilterCommand().execute();
                     break;
                 case 3:
-                    new addToBucketCommand().execute();
+                    new AddToBucketCommand().execute();
                     break;
                 case 4:
                     new ShowBucketCommand().execute();

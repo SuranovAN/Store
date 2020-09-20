@@ -1,8 +1,8 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import Product.ProductEntity;
-import Product.ProductsDB;
-import UserBucket.UserBucket;
+import product.ProductEntity;
+import product.ProductsDB;
+import usersbucket.UsersBucket;
 
 import java.io.File;
 import java.io.FileReader;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class RepeatLastOrderCommand implements ConsoleCommand {
     File fileBucket = new File("src\\Source\\lastOrder");
     File Order = new File("src\\order\\lastOrder");
-    UserBucket userBucket = UserBucket.getInstance();
+    UsersBucket userBucket = UsersBucket.getInstance();
     ProductsDB productsDB = ProductsDB.getInstance();
 
     @Override

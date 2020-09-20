@@ -1,9 +1,9 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import Filters.FilterByManufacturer;
-import Filters.FilterByName;
-import Filters.FilterByPrice;
-import Filters.FilterByType;
+import filters.FilterByManufacturer;
+import filters.FilterByName;
+import filters.FilterByPrice;
+import filters.FilterByType;
 
 import java.util.Scanner;
 

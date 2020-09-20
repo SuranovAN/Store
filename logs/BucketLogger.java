@@ -1,4 +1,4 @@
-package Logs;
+package logs;
 
 import java.io.File;
 import java.io.FileWriter;

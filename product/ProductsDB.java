@@ -1,4 +1,4 @@
-package Product;
+package product;
 
 import java.io.File;
 import java.io.FileReader;

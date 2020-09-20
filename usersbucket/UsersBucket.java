@@ -1,18 +1,18 @@
-package UserBucket;
+package usersbucket;
 
-import Product.ProductEntity;
+import product.ProductEntity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserBucket {
-    private static UserBucket userBucket;
+public class UsersBucket {
+    private static UsersBucket userBucket;
     private StringBuilder summary = new StringBuilder();
     private List<ProductEntity> bucket = new ArrayList<>();
 
-    public static UserBucket getInstance() {
+    public static UsersBucket getInstance() {
         if (userBucket == null) {
-            userBucket = new UserBucket();
+            userBucket = new UsersBucket();
         }
         return userBucket;
     }

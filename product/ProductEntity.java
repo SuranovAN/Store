@@ -1,4 +1,4 @@
-package Product;
+package product;
 
 public class ProductEntity {
     private String name, manufactures;

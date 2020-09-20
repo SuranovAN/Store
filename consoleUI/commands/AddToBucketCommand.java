@@ -1,15 +1,15 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import Logs.BucketLogger;
-import Logs.Logger;
-import Product.ProductEntity;
-import Product.ProductsDB;
-import UserBucket.UserBucket;
+import logs.BucketLogger;
+import logs.Logger;
+import product.ProductEntity;
+import product.ProductsDB;
+import usersbucket.UsersBucket;
 
 import java.util.Scanner;
 
-public class addToBucketCommand implements ConsoleCommand {
-    UserBucket userBucket = UserBucket.getInstance();
+public class AddToBucketCommand implements ConsoleCommand {
+    UsersBucket userBucket = UsersBucket.getInstance();
     ProductsDB productsDB = ProductsDB.getInstance();
 
     @Override

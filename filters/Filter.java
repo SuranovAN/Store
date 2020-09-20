@@ -1,6 +1,6 @@
-package Filters;
+package filters;
 
-import Product.*;
+import product.*;
 
 import java.util.List;
 

@@ -1,11 +1,11 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import UserBucket.UserBucket;
+import usersbucket.UsersBucket;
 
 public class ShowBucketCommand implements ConsoleCommand {
     @Override
     public void execute() {
-        UserBucket userBucket = UserBucket.getInstance();
+        UsersBucket userBucket = UsersBucket.getInstance();
         System.out.println(userBucket.getSummary());
     }
 }

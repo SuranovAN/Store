@@ -1,7 +1,7 @@
-package ConsoleUI.Commands;
+package consoleUI.commands;
 
-import Product.ProductEntity;
-import Product.ProductsDB;
+import product.ProductEntity;
+import product.ProductsDB;
 
 import java.util.List;
 
